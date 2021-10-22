@@ -14,7 +14,7 @@ html{
 
 body {
     max-width: 1600px;
-    min-width: 900px;
+    min-width: 1350px;
     margin: 0 auto;
 }
 
@@ -45,8 +45,8 @@ body {
 
 .inline-list-item{
     text-decoration: none;
+    display: block;
     color: black;
-    vertical-align: middle;
 }
 
 .btn {
@@ -58,14 +58,78 @@ body {
 
 /* NAV */
 
+
 nav {
-    padding: 1.5em;
+    
     position: fixed;
     top: 0;
     width: 100%;
+    height: 80px;
     max-width: 1600px;
-    min-width: 900px;
+    min-width: 1350px;
     margin: 0 auto;
     background-color: white;
 }
 
+nav > * {
+    height: 100%;
+    line-height: 80px;
+}
+
+.logo {
+    vertical-align: middle;
+}
+
+/* JUMBO */
+.jumbo {
+    width: 100%;
+    height: 100vh;
+    margin: 80px auto 0;
+}
+
+.blue-jumbo {
+    background-color: #B4D0E7;
+    width: 100%;
+    height: 80vh;
+}
+
+.jumbo-content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.jumbo-content .jumbo-title {
+    font-size: 4.7em;
+    padding: 1em 0 0.5em;
+}
+
+.blue-jumbo .jumbo-left {
+    width: 30%;
+}
+
+.blue-jumbo .jumbo-right {
+    width: 70%;
+}
+
+.jumbo-content .jumbo-paragraph{
+    padding: 0 2em 2em 0;
+    font-size: 0.9em;
+}
+
+.jumbo-content .jumbo-cancel{
+    padding: 1.8em 2em 2em 0;
+    font-size: 0.8em;
+}
+
+.jumbo-content .jumbo-button{
+    padding: 0.5em 1em;
+    font-size: 1.2em;
+}
+
+.jumbo-image {
+    width: 100%;
+}
+
+.jumbo-content i {
+    font-size: 3em;
+}
