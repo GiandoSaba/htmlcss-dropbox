@@ -75,6 +75,25 @@ body {
     color: white;
 }
 
+ul.description {
+    list-style-type: none;
+}
+
+ul.description li {
+    padding: 0.7em 0;
+}
+
+ul.description i {
+    width: 7%;
+    line-height: 1.5em;
+}
+
+ul.description span {
+    width: 93%;
+    line-height: 1.5em;
+}
+
+
 /* NAV */
 
 
@@ -153,6 +172,7 @@ nav > * {
 .plan-type {
     width: calc(100% / 3 - 2em);
     margin: 2em 0;
+    font-size: 0.9em;
     border: 1px solid #D8D8DA;
 }
 
@@ -167,7 +187,7 @@ nav > * {
 }
 
 .plan-main {
-    padding: 1.5em 0;
+    padding-top: 1.5em;
 }
 
 .plan-main .plan-title {
@@ -181,21 +201,26 @@ nav > * {
 
 .plan-main .plan-price-time {
     color: #959FA9;
-    font-size: 0.9em;
     margin-bottom: 3em;
 }
 
-.plan-main .description {
-    font-size: 0.9em;
-    margin: 1.8em 0;
+.plan-button {
+    margin: 2em 0;
 }
 
-.description i {
-    width: 7%;
-    line-height: 1.5em;
+.plan-main::after {
+    content: '';
+    width: 20%;
+    height: 1px;
+    background-color: #D8D8DA;
+    margin: 2em 0;
 }
 
-.description span {
-    width: 93%;
-    line-height: 1.5em;
+.plan-footer .plan-list-title {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.plan-footer i {
+    color: #0061FF;
 }
