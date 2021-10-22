@@ -33,12 +33,20 @@ a {
     margin: 0 auto;
 }
 
+.width-60 {
+    width: 60%;
+}
+
 .width-70 {
     width: 70%;
 }
 
 .width-80 {
     width: 80%;
+}
+
+.width-95 {
+    width: 95%;
 }
 
 .width-100 {
@@ -145,7 +153,7 @@ nav > * {
 }
 
 .jumbo-content .jumbo-paragraph{
-    padding: 0 2em 3em 0;
+    padding: 0 5em 3em 0;
     font-size: 0.9em;
 }
 
@@ -180,18 +188,21 @@ nav > * {
 }
 
 .plan-type {
-    width: calc(100% / 3 - 2em);
-    margin: 2em 0;
-    height: 1000px;
     font-size: 0.9em;
     border: 1px solid #D8D8DA;
 }
 
-.plan .plan-type:nth-child(2) {
+.plan-type-col .plan-type{
+    width: calc(100% / 3 - 2em);
+    margin: 2em 0;
+    height: 1000px;  
+}
+
+.plan-type-col .plan-type:nth-child(2) {
     margin: 2em 3em;
 }
 
-.plan-type .plan-header {
+.plan-header {
     border-bottom: 1px solid #D8D8DA;
     padding: 1em;
     text-align: center;
@@ -216,10 +227,19 @@ nav > * {
 }
 
 .plan-button {
-    margin: 2em 0;
+    padding: 0.5em 2em;
+    display: block;
 }
 
-.plan-main::after {
+.plan-main .description {
+    margin-bottom: 2em;
+}
+
+.plan-main .buy-now{
+    margin-top: 2em;
+}
+
+.plan-type-col .plan-main::after {
     content: '';
     width: 20%;
     height: 1px;
@@ -234,4 +254,12 @@ nav > * {
 
 .plan-footer i {
     color: #0061FF;
+}
+
+.plan-type-row {
+    margin-bottom: 2em;
+}
+
+.plan-type-row .plan-description {
+    margin: 2em 0;
 }
