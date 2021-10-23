@@ -29,8 +29,28 @@ a {
 
 /* COMMON */
 
+.underlined {
+    text-decoration: underline;
+}
+
 .margin-auto {
     margin: 0 auto;
+}
+
+.margin-top-5 {
+    margin-top: 5em;
+}
+
+.width-30 {
+    width: 30%;
+}
+
+.width-40 {
+    width: 40%;
+}
+
+.width-50 {
+    width: 50%;
 }
 
 .width-60 {
@@ -82,6 +102,30 @@ a {
     color: black;
 }
 
+.section-title {
+    font-size: 2.5em;
+}
+
+.content-title {
+    font-size: 2em;
+    padding-bottom: 1em;
+}
+
+.content-paragraph {
+    font-size: 1.1em;
+    line-height: 2em;
+    padding-bottom: 2em;
+}
+
+.float-3{
+    width: calc(100% / 3 - 2em);
+    margin: 2em 0; 
+}
+
+.float-3:nth-child(3n+2) {
+    margin: 2em 3em;
+}
+
 .btn {
     text-decoration: none;
     padding: 0.4em;
@@ -91,6 +135,12 @@ a {
 .btn.btn-blue {
     background-color: #0061FF;
     color: white;
+}
+
+.btn.btn-white {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
 }
 
 ul.description {
@@ -118,14 +168,15 @@ ul.description span {
 nav {
     position: fixed;
     top: 0;
-    height: 80px;
+    height: 70px;
     min-width: 1350px;
     background-color: white;
+    border-bottom: 1px solid #D8D8DA;
 }
 
 nav > * {
     height: 100%;
-    line-height: 80px;
+    line-height: 70px;
 }
 
 .logo {
@@ -135,7 +186,7 @@ nav > * {
 /* JUMBO */
 .jumbo {
     height: 100vh;
-    margin-top: 3em;
+    margin-top: 70px;
 }
 
 .blue-jumbo {
@@ -183,7 +234,6 @@ nav > * {
 
 /* PLAN SECTION */
 .price .price-title{
-    font-size: 2.5em;
     margin-bottom: 1.5em;
 }
 
@@ -192,14 +242,8 @@ nav > * {
     border: 1px solid #D8D8DA;
 }
 
-.plan-type-col .plan-type{
-    width: calc(100% / 3 - 2em);
-    margin: 2em 0;
-    height: 1000px;  
-}
-
-.plan-type-col .plan-type:nth-child(2) {
-    margin: 2em 3em;
+.plan-type-col .plan-type {
+    height: 1000px;
 }
 
 .plan-header {
@@ -262,4 +306,72 @@ nav > * {
 
 .plan-type-row .plan-description {
     margin: 2em 0;
+}
+
+
+/* PARTNER SECTION */
+
+.partner {
+    margin: 10em auto
+}
+
+.partner .partner-content {
+    padding: 4em ;
+}
+
+/* TEAMS SECTION */
+
+.teams .section-title {
+    padding-right: 50%;
+    margin-bottom: 0.5em;
+}
+
+.teams .teams-ico {
+    margin-top: 3em;
+}
+
+.ico-square {
+    height: 260px;
+    width: 50%;
+    position: relative;
+}
+
+.ico-square .ico-image {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#designit {
+    background-color: #A2D39B;
+}
+
+#asu {
+    background-color: #61082B;
+}
+
+#uflorida {
+    background-color: #0093CE;
+}
+
+#topps{
+    background-color: #FF1C1C;
+}
+
+#wbrelif{
+    background-color: #D5001F;
+}
+
+#hearst{
+    background-color: #B4D0E7;
+}
+
+#lonelyp{
+    background-color: #0D2481;
+}
+
+#clearc{
+    background-color: #FFD830;
 }
