@@ -172,6 +172,10 @@ ul.description span {
 }
 
 
+.relative {
+    position: relative;
+}
+
 /* NAV */
 
 
@@ -196,6 +200,31 @@ nav > * {
 
 nav .inline-list-item:hover {
     border-bottom: 2px solid black;
+}
+
+ul.sub-menu{
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    width: 250px;
+    background-color: #f5f5f5;
+    font-size: 0.8em;
+    display: none;
+}
+
+ul.sub-menu li {
+    display: block;
+    line-height: 4em;
+    margin: 0;
+    padding: 0 1em;
+}
+
+.sub-hover:hover .sub-menu {
+    display: block;
+}
+
+ul.sub-menu li:hover {
+    background-color: rgba(37, 37, 37, 0.5);
 }
 
 /* JUMBO */
