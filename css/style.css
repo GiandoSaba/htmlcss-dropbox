@@ -13,7 +13,7 @@ html{
 }
 
 body {
-    /* min-width: 1350px; */
+    min-width: 1350px;
 }
 
 a {
@@ -147,7 +147,6 @@ a {
 .btn.btn-white {
     background-color: white;
     color: black;
-    border: 1px solid black;
 }
 
 ul.description {
@@ -320,6 +319,10 @@ nav > * {
     padding: 4em ;
 }
 
+.partner .partner-btn {
+    border: 1px solid black;
+}
+
 /* TEAMS SECTION */
 
 .teams .section-title {
@@ -407,3 +410,92 @@ nav > * {
 }
 
 
+/* SECTION CALL TO ACTION */
+
+.call-action {
+    background-color: #B4D0E7;
+}
+
+.call-action .row {
+    padding: 6em 0;
+}
+
+.call-action .section-title {
+    width: 50%;
+}
+
+.call-action .btn {
+    border: none;
+    padding: 0.5em 3em;
+}
+
+/* FAQ SECTION */
+
+.faq {
+    padding-bottom: 6em;
+}
+
+.faq .section-title {
+    font-size: 2em;
+    margin-bottom: 2em;
+}
+
+.faq ul {
+    list-style-type: none;
+}
+
+.faq li {
+    padding: 1.8em 3em 2em 0;
+    border-top: 1px solid #D8D8DA;
+    font-size: 0.9em;
+}
+
+.faq li:last-child {
+    border-bottom: 1px solid #D8D8DA;
+}
+
+.faq i {
+    font-size: 1.3em;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+.footer-main {
+    padding: 4em 0;
+}
+
+.footer-main .footer-menu {
+    margin-right: 3em;
+    width: calc(100% / 5 - 3em);
+}
+
+.footer-menu ul {
+    list-style-type: none;
+}
+
+.footer-menu h5 {
+    font-size: 1.3em;
+    margin: 0.8em 0;
+}
+
+.footer-menu a {
+    font-size: 0.9em;
+    display: block;
+    margin: 0.5em 0;
+}
+
+footer hr {
+    width: 10%;
+}
+
+footer .language {
+    color: grey;
+    font-size: 0.8em;
+    padding: 2em 0;
+}
