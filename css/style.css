@@ -13,7 +13,7 @@ html{
 }
 
 body {
-    min-width: 1350px;
+    /* min-width: 1350px; */
 }
 
 a {
@@ -116,6 +116,10 @@ a {
     padding-bottom: 2em;
 }
 
+.height-450{
+    height: 450px;
+} 
+
 .float-3{
     width: calc(100% / 3 - 2em);
     margin: 2em 0; 
@@ -151,6 +155,7 @@ a {
 .btn.btn-white {
     background-color: white;
     color: black;
+    display: block;
 }
 
 ul.description {
@@ -358,6 +363,7 @@ ul.sub-menu li:hover {
 
 .partner .partner-btn {
     border: 1px solid black;
+    width: 50%;
 }
 
 /* TEAMS SECTION */
@@ -372,14 +378,13 @@ ul.sub-menu li:hover {
 }
 
 .ico-square {
-    height: 260px;
     width: 50%;
-    position: relative;
+    height: 50%;
 }
 
 .ico-square .ico-image {
     width: 50%;
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -421,7 +426,6 @@ ul.sub-menu li:hover {
 
 .team-description {
     background-color: #F5F5F5;
-    height: calc(260px * 2);
     overflow-y: scroll;
     padding: 3em;
 }
