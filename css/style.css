@@ -13,8 +13,7 @@ html{
 }
 
 body {
-    
-    min-width: 1350px;
+    /* min-width: 1350px; */
 }
 
 a {
@@ -37,8 +36,8 @@ a {
     margin: 0 auto;
 }
 
-.margin-top-5 {
-    margin-top: 5em;
+.margin-top-6 {
+    margin-top: 6em;
 }
 
 .width-30 {
@@ -126,6 +125,14 @@ a {
     margin: 2em 3em;
 }
 
+.line-bottom::after {
+    content: '';
+    width: 20%;
+    height: 1px;
+    background-color: #D8D8DA;
+    margin: 2em 0;
+}
+
 .btn {
     text-decoration: none;
     padding: 0.4em;
@@ -167,6 +174,7 @@ ul.description span {
 
 nav {
     position: fixed;
+    z-index: 999;
     top: 0;
     height: 70px;
     min-width: 1350px;
@@ -184,19 +192,13 @@ nav > * {
 }
 
 /* JUMBO */
-.jumbo {
-    height: 100vh;
-    margin-top: 70px;
-}
-
 .blue-jumbo {
     background-color: #B4D0E7;
-    height: 80vh;
 }
 
 .jumbo-content .jumbo-title {
     font-size: 4.7em;
-    padding: 1em 0 0.5em;
+    padding: 1.5em 0 0.5em;
 }
 
 .blue-jumbo .jumbo-left {
@@ -216,10 +218,17 @@ nav > * {
 .jumbo-content .jumbo-button{
     padding: 0.5em 1em;
     font-size: 1.2em;
+    display: inline-block;
 }
 
 .jumbo-content i {
     font-size: 3em;
+}
+
+.jumbo-right .jumbo-image {
+    position: relative;
+    bottom: -50px;
+    right: 0;
 }
 
 /* MAIN */
@@ -283,14 +292,6 @@ nav > * {
     margin-top: 2em;
 }
 
-.plan-type-col .plan-main::after {
-    content: '';
-    width: 20%;
-    height: 1px;
-    background-color: #D8D8DA;
-    margin: 2em 0;
-}
-
 .plan-footer .plan-list-title {
     font-size: 1.2em;
     margin-bottom: 1em;
@@ -342,6 +343,7 @@ nav > * {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    filter: invert(1);
 }
 
 #designit {
@@ -375,3 +377,33 @@ nav > * {
 #clearc{
     background-color: #FFD830;
 }
+
+.team-description {
+    background-color: #F5F5F5;
+    height: calc(260px * 2);
+    overflow-y: scroll;
+    padding: 3em;
+}
+
+.team-description img {
+    width: 10em;
+    display: block;
+}
+
+.team-description p {
+    margin-top: 3em;
+    line-height: 1.5em;
+}
+
+.team-description h4 {
+    font-weight: normal;
+}
+
+.line {
+    width: 50px;
+    height: 2px;
+    background-color: #D8D8DA;
+    margin: 2em 0;
+}
+
+
